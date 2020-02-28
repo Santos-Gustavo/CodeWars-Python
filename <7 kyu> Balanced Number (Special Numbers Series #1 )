@@ -1,0 +1,14 @@
+def balanced_num(number):
+    e=str(number)
+    a=len(e)
+    res = [int(x) for x in str(number)] 
+    import numpy as np
+    c=np.ceil(a/2)    
+    if a%2==0: 
+        if sum(res[:int(c-1)]) == sum(res[int(c+1):]):
+            return 'Balanced'
+        else: return 'Not Balanced'
+    else:
+        if sum(res[:int(c-1)]) == sum(res[int(c):]):
+            return "Balanced"
+        else: return 'Not Balanced'
