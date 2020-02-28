@@ -1,0 +1,12 @@
+def row_weights(array):
+    p=1
+    list1= 0
+    list2= 0
+    for i in array:
+        if p % 2 !=0:
+            list1 += i
+            p += 1
+        else:
+            list2 += i
+            p += 1
+    return list1,list2
