@@ -1,0 +1,10 @@
+def digital_root(n):
+    t=n     
+    while int(len(str(t)))!=1: 
+        a=0
+        for i in list(str(n)): 
+            a=a+int(i)
+            t=a
+            n=a
+    else:
+         return n
