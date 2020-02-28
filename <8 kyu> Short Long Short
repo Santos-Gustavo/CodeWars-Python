@@ -1,0 +1,10 @@
+def solution(a, b):
+        while a is int:
+            c = min(a,b)
+            d=max(a,b)
+            return c+d+c
+        else:
+            if len(a) > len(b):
+                return b+a+b
+            else:
+                return a+b+a
