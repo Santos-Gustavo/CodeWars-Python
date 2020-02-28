@@ -1,0 +1,9 @@
+def solution(number):
+  list1=0
+  i=1
+  while i<number:
+      if i %3==0 or i%5==0:
+          list1+=i
+          pass
+      i+=1
+  return list1
