@@ -1,0 +1,10 @@
+def duplicate_count(text):
+    text=text.lower()
+    r=0
+    rem=[]
+    for c in text:
+        if c not in rem:
+            if text.count(c) > 1:
+                rem.append(c)
+                r+=1
+    return r
