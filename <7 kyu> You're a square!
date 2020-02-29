@@ -1,0 +1,7 @@
+def is_square(n):
+    if n <0:
+        return False
+    else:
+        import math
+        sqrt=int(math.sqrt(n))
+        return sqrt*sqrt ==n
