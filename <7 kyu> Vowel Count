@@ -1,6 +1,5 @@
 def getCount(let):
     num_vowels = 0
-    # your code here
     for char in list(let):
       vowels = ['a','e','i','o','u']
       if char in vowels:
