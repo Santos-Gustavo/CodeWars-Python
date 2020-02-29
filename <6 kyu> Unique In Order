@@ -1,0 +1,10 @@
+def unique_in_order(iterable):
+    lis=[]
+    i = 0
+    for x in iterable:
+        if i == x:
+            pass
+        else:
+            lis.append(x)
+            i = x
+    return lis
