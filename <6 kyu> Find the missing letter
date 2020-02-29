@@ -1,0 +1,11 @@
+def find_missing_letter(chars):
+    x = ord(chars[0])
+    a=1
+    i=x
+    for letter in chars:
+        if x == i:
+            x = ord(chars[a])
+            i += 1
+            a +=1
+        else:
+            return chr(x-1)   
