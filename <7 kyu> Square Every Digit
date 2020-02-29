@@ -1,0 +1,6 @@
+def square_digits(num):
+    import math
+    rf = []
+    for d in str(num):
+        rf += str(int(d)*int(d))
+    return int(''.join(rf))
